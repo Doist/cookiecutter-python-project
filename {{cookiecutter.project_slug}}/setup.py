@@ -1,3 +1,4 @@
+import io
 import os
 
 from setuptools import find_packages, setup
@@ -5,7 +6,7 @@ from setuptools import find_packages, setup
 here = os.path.abspath(os.path.dirname(__file__))
 
 
-with open(os.path.join(here, "README.md"), "rt") as f:
+with io.open(os.path.join(here, "README.md"), "rt") as f:
     long_description = "\n" + f.read()
 
 version_mod = {}
@@ -20,11 +21,11 @@ setup(
     author_email="{{ cookiecutter.author_email }}",
     license="{{ cookiecutter.project_license }}",
     description="{{ cookiecutter.project_short_description }}",
-    long_description=read("README.md"),
+    long_description=long_description,
     install_requires=[],
     # see here for complete list of classifiers
     # http://pypi.python.org/pypi?%3Aaction=list_classifiers
-    classifiers=(
+    classifiers=[
         "Intended Audience :: Developers",
         {% if cookiecutter.project_license == 'Proprietary' -%}
         "License :: Other/Proprietary License",
@@ -33,5 +34,5 @@ setup(
         "License :: OSI Approved :: {{ cookiecutter.project_license }} License",
         {% endif -%}
         "Programming Language :: Python",
-    ),
+    ],
 )
