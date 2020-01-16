@@ -7,8 +7,8 @@ Use this cookiecutter template 🍪 to start every new Python project at Doist.
 Nothing can be easier:
 
 ```
-git clone https://github.com/Doist/cookiecutter-python.git
-cookiecutter cookiecutter-python/
+git clone https://github.com/Doist/cookiecutter-python-project.git
+cookiecutter cookiecutter-python-project/
 ```
 
 ## What's inside
@@ -17,21 +17,19 @@ The template covers your back with the following elements:
 
 - README.md with a pre-defined structure.
 - CHANGELOG.md file with an initial message.
-- Stub project template with a version file.
+- Stub project template.
 - Test directory with a sample test file.
-- Tox configuration to run tests in different environments.
-- GitHub workflow configuration to run tox tests automatically.
+- GitHub workflow configuration to run pytest automatically.
 - Pre-configured mypy, Flake8, isort.
 - A set of pre-commit hooks.
-- Makefile to build and release new versions of packages.
-- Basic setup.py which automatically copies the long description from README.md and
-  takes the version from the version file.
+- pyproject.toml for Poetry.
 
 ## How to use it
 
 Before creating a project:
 
-- Choose a project name. Likely, in the format `doist-foo-bar` and create a GitHub
+- Install [Poetry](https://python-poetry.org/docs/#installation)
+- Choose a project name. Likely, in the format `foo-bar` and create a GitHub
   repository for it. The root package of your project will have a default
   name `foo_bar`. Make sure that you made the repository private if you plan to create
   a private (non-open-source) project.
@@ -41,7 +39,7 @@ Before creating a project:
 After creating a project:
 
 - Initialize git repo with `git init`
-- Initialize your pre-commit hooks inside the repo with `pre-commit init`. For
+- Initialize your pre-commit hooks inside the repo with `pre-commit install`. For
   more details follow https://pre-commit.com/
 - Add all files to the repo, review staged changes and commit them.
 - Deploy changes to GitHub.
