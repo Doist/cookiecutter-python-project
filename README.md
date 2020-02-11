@@ -51,6 +51,22 @@ Other hints:
   to fill in our README with the content.
 - Use [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) guideline for your
   changelog entries.
+  
+## How to configure VSCode
+
+At the moment, VSCode doesn't automatically detect Poetry environments. You can set it 
+manually though. For a newly created project, create a `.vscode/settings.json`
+
+```
+mkdir -p .vscode
+cat <<EOF > .vscode/settings.json
+{
+  "python.pythonPath": "$(poetry env info -p)/bin/python"
+}
+EOF
+```
+
+Ref: https://github.com/microsoft/vscode-python/issues/8372
 
 ## How to contribute
 
