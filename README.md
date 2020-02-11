@@ -41,6 +41,7 @@ After creating a project:
 - Initialize git repo with `git init`
 - Initialize your pre-commit hooks inside the repo with `pre-commit install`. For
   more details follow https://pre-commit.com/
+- Initialize virtual environment and install all dependencies with `poetry install`
 - Add all files to the repo, review staged changes and commit them.
 - Deploy changes to GitHub.
 
