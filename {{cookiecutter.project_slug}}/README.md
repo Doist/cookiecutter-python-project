@@ -1,7 +1,5 @@
 # {{ cookiecutter.project_name }}
 
-![](https://github.com/Doist/{{ cookiecutter.project_slug }}/workflows/Tests/badge.svg)
-
 {{ cookiecutter.project_short_description}}
 
 ## Getting Started

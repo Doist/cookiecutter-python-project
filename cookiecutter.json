@@ -1,12 +1,13 @@
 {
   "author_name": "Doist Developers",
   "author_email": "dev@doist.com",
+  "author_github": "Doist",
 
   "project_name": "Foo Bar",
   "project_short_description": "Starter Template for Python projects at Doist",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
   "project_license": ["MIT", "Proprietary"],
-  "project_url": "https://github.com/Doist/foo-bar",
+  "project_url": "https://github.com/{{ cookiecutter.author_github}}/{{ cookiecutter.project_slug }}",
   "project_version": "1.0.0",
   "project_version_tuple": "({{', '.join(cookiecutter.project_version.split('.'))}})",
   "root_package": "{{ cookiecutter.project_slug.replace('-', '_') }}",
