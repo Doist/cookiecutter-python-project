@@ -18,7 +18,7 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "{{ cookiecutter.python_version }}"
+python = "^{{ cookiecutter.python_version }}"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.3.2"
