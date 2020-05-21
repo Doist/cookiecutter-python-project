@@ -44,6 +44,7 @@ After creating a project:
 - Initialize virtual environment and install all dependencies with `poetry install`
 - Add all files to the repo, review staged changes and commit them.
 - Deploy changes to GitHub.
+- For Windows, you might need to change your personal access token to GitHub, see information [here](https://github.com/gitextensions/gitextensions/issues/4916#issuecomment-557509451)
 
 Other hints:
 
