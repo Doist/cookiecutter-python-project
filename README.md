@@ -11,6 +11,8 @@ git clone https://github.com/Doist/cookiecutter-python-project.git
 cookiecutter cookiecutter-python-project/
 ```
 
+For Windows, you might need to run `python -m cookiecutter` as the command might not work even though it's correctly configured on the PATH.
+
 ## What's inside
 
 The template covers your back with the following elements:
