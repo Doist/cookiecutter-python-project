@@ -29,6 +29,6 @@ repos:
       - id: mypy
 
   - repo: https://github.com/timothycrosley/isort
-    rev: v4.3.21-2
+    rev: 4.3.21-2
     hooks:
       - id: isort
