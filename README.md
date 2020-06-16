@@ -61,6 +61,7 @@ At the moment, VSCode doesn't automatically detect Poetry environments. You can 
 manually though. For a newly created project, create a `.vscode/settings.json`
 
 ```
+poetry install
 mkdir -p .vscode
 cat <<EOF > .vscode/settings.json
 {
